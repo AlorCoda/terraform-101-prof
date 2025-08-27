@@ -24,7 +24,7 @@ resource "aws_iam_role" "github_actions_api_access_role" {
             "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
           },
           StringLike = {
-            "token.actions.githubusercontent.com:sub" = "repo:alorcoda/*"
+            "token.actions.githubusercontent.com:sub" = "repo:alorcoda/terraform-101-prof:*"
           }
         }
       }
