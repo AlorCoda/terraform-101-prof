@@ -24,7 +24,7 @@ resource "aws_iam_role" "github_actions_api_access_role" {
   },
           "StringLike" : {
             "token.actions.githubusercontent.com:sub" : [
-              "alorcoda/terraform-101-prof:*"
+              "AlorCoda/*"
             ]
           }
         }
