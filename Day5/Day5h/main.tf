@@ -19,7 +19,7 @@ resource "aws_iam_role" "github_actions_api_access_role" {
         },
         "Action" : "sts:AssumeRoleWithWebIdentity",
         "Condition" : {
-          "StringLike" : {
+          "ForAnyValue:StringLike" : {
             "token.actions.githubusercontent.com:sub" : [
               "repo:AlorCoda/*"
             ]
